@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost.ttf);
+}
+@font-face {
+  font-family: Bungee;
+  src: url(../fonts/Bungee-Regular.ttf);
+}
+@font-face {
+  font-family: Major-Mono;
+  src: url(../fonts/MajorMonoDisplay.ttf);
+}
+
+:root {
+  /* Global Spacing Variables */
+  --small-spacing-01: 0.25rem;
+  --small-spacing-02: 0.50rem;
+  --small-spacing-03: 0.75rem;
+  --small-spacing-04: 1rem;
+  --small-spacing-05: 1.25rem;
+  --small-spacing-06: 1.5rem;
+  --medium-spacing-01: 1.75rem;
+  --medium-spacing-02: 2rem;
+  --medium-spacing-03: 2.25rem;
+  --medium-spacing-04: 2.5rem;
+  --medium-spacing-05: 2.75rem;
+  --medium-spacing-06: 3rem;
+  --large-spacing-01: 3.25rem;
+  --large-spacing-02: 3.5rem;
+  --large-spacing-03: 3.75rem;
+  --large-spacing-04: 4rem;
+  --large-spacing-05: 4.25rem;
+  --large-spacing-06: 4.5rem;
+  --big-spacing-01: 6rem;
+  --big-spacing-02: 7rem;
+  --big-spacing-03: 8rem;
+  --big-spacing-04: 9rem;
+
+  /* Global Color Variables */
+  --primary-color: #0D0D0D;
+  --primary-color-lighter: #515151;
+  --primary-color-medium: #161619;
+  --primary-color-dark: #101010;
+  --secondary-color:#162B68;
+  --secondary-color-medium: #3757B7;
+  --secondary-color-lighter: #5982FC;
+  --auxiliary-color-01: #000;
+  --auxiliary-color-02: #fff;
+  --auxiliary-color-03: #E6E6E6;
+
+  /* Font Variables */
+  --primary-font: Jost, sans-serif;
+  --secondary-font: Major-Mono, monospace, sans-serif;
+  --title-font: Bungee, Arial, sans-serif;
+}
+
+.App {
+  height: 300vh;
+  /* padding: var(--medium-spacing-06) var(--large-spacing-06); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--auxiliary-color-01) url(../img/hero-page-background.png) no-repeat fixed bottom center;
+  background-size: cover;
+  color: var(--auxiliary-color-03);
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.hidden {
+  display: none;
+}

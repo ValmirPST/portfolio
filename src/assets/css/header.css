@@ -1,0 +1,74 @@
+@import './global.css';
+
+.global-header {
+  width: 100%;
+  background-color: var(--primary-color);
+  margin-bottom: 6%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: var(--medium-spacing-04) var(--large-spacing-06);
+}
+
+.global-nav {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.global-nav #logo-link {
+  width: max-content;
+  display: flex;
+}
+
+.global-nav .links-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--medium-spacing-06);
+}
+
+.nav-link {
+  color: var(--auxiliary-color-03);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--auxiliary-color-02);
+  transition: 0.2s;
+  text-shadow: 0 0 5px #fff;
+}
+
+.global-nav .select-language {
+  display: flex;
+  height: 1.2rem;
+  gap: 1px;
+  cursor: pointer;
+}
+
+#us-flag:hover, #brazil-flag:hover {
+  box-shadow: 0 0 5px #fff;
+  transition: 0.2s;
+}
+
+.global-header .menu {
+  text-align: end;
+}
+
+.global-header .menu img {
+  height: var(--medium-spacing-06);
+}
+
+@media screen and (width < 905px) {
+  .global-header {
+    padding: var(--medium-spacing-02) var(--medium-spacing-04);
+  }  
+
+  .global-nav .links-div {
+    display: none;
+  }
+
+  .global-nav .menu {
+    display: block;
+  }
+}
