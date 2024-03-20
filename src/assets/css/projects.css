@@ -1,0 +1,46 @@
+@import './global.css';
+
+.projects {
+  background-color: var(--auxiliary-color-04);
+  padding: var(--large-spacing-06)
+}
+
+.projects .projects-section {
+  background-color: var(--primary-color-dark);
+  border-radius: var(--small-spacing-04);
+  padding: var(--large-spacing-06) var(--large-spacing-02) var(--big-spacing-02);
+}
+
+.projects .projects-section .secondary-title {
+  margin: 0 auto 6% auto;
+}
+
+.projects .projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--large-spacing-04);
+  color: var(--auxiliary-color-04);
+}
+
+.projects .project-box {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.projects .project-box .project-title {
+  font: normal var(--small-spacing-06) var(--secondary-font);
+  margin-bottom: var(--small-spacing-06);
+  white-space: nowrap;
+}
+
+.projects .project-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--small-spacing-02);
+  margin-bottom: var(--small-spacing-04);
+}
+
+@media screen and (width < 1010px) {
+  
+}

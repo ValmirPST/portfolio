@@ -3,11 +3,11 @@
 .hero-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 var(--big-spacing-02);
+  padding: 8% var(--big-spacing-02);
 }
 
 .hero-page #title {
-  font: normal var(--medium-spacing-06) var(--title-font);
+  font: 800 var(--medium-spacing-06)/var(--large-spacing-02) var(--primary-font);
   margin-bottom: var(--medium-spacing-02);
 }
 
@@ -22,7 +22,7 @@
 .hero-page .more-info-button {
   color: var(--auxiliary-color-03);
   background-color: transparent;
-  font: normal var(--small-spacing-06) var(--title-font);
+  font: 700 var(--small-spacing-06) var(--primary-font);
   border: 1px solid var(--secondary-color);
   box-shadow: 0 0 12px var(--secondary-color);
   padding: var(--small-spacing-01) var(--small-spacing-06);
@@ -55,29 +55,32 @@
   gap: var(--small-spacing-04);
 }
 
+.link-container img {
+  transition: 0.4s;
+}
+
 .link-container img:hover {
   cursor: pointer;
   opacity: 50%;
   box-shadow: 0 0 5px #fff;
   border-radius: 50%;
-  transition: 0.4s;
 }
 
 @media screen and (width < 1010px) {
   .hero-page {
-    padding: 0 var(--medium-spacing-06);
+    padding: 12% var(--medium-spacing-02);
   }
 
   .hero-page #title {
-    font-size: var(--medium-spacing-04);
+    font-size: var(--medium-spacing-03);
   }
 
   .hero-page #subtitle {
-    font-size: var(--small-spacing-06);
+    font-size: var(--small-spacing-05);
   }
 
   .hero-page #subtitle > span {
-    font-size: var(--small-spacing-04);
+    font-size: var(--small-spacing-03);
   }
 
   .hero-page #usual-links-title {
@@ -89,6 +92,6 @@
     width: var(--medium-spacing-02);
   }
   .hero-page .more-info-button {
-    font-size: var(--small-spacing-05);
+    font-size: var(--small-spacing-04);
   }
 }
