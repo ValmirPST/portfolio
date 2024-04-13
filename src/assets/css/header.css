@@ -65,7 +65,21 @@
   height: var(--medium-spacing-06);
 }
 
-@media screen and (width < 1010px) {
+@media screen and (width < 920px) {
+  .global-header {
+    padding: var(--small-spacing-06) var(--medium-spacing-04);
+  }  
+
+  .global-nav .links-div {
+    display: none;
+  }
+
+  .global-nav .menu {
+    display: block;
+  }
+}
+
+@media screen and (width < 520px) {
   .global-header {
     padding: var(--small-spacing-04) var(--medium-spacing-02);
   }  
@@ -78,17 +92,3 @@
     display: block;
   }
 }
-
-/* @media screen and (width < 1010px) {
-  .global-header {
-    padding: var(--small-spacing-04) var(--medium-spacing-02);
-  }  
-
-  .global-nav .links-div {
-    display: none;
-  }
-
-  .global-nav .menu {
-    display: block;
-  }
-} */

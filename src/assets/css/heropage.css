@@ -1,13 +1,14 @@
-@import './global.css';
+@import "./global.css";
 
 .hero-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 8% var(--big-spacing-02);
+  padding: 8% var(--large-spacing-06);
 }
 
 .hero-page #title {
-  font: 800 var(--medium-spacing-06)/var(--large-spacing-02) var(--primary-font);
+  font: 800 var(--medium-spacing-06) / var(--large-spacing-02)
+    var(--primary-font);
   margin-bottom: var(--medium-spacing-02);
 }
 
@@ -66,13 +67,44 @@
   border-radius: 50%;
 }
 
-@media screen and (width < 1010px) {
+@media screen and (width < 920px) {
   .hero-page {
-    padding: 12% var(--medium-spacing-02);
+    padding: 12% var(--medium-spacing-06);
   }
 
   .hero-page #title {
-    font-size: var(--medium-spacing-03);
+    font-size: var(--medium-spacing-04);
+  }
+
+  .hero-page #subtitle {
+    font-size: var(--small-spacing-06);
+  }
+
+  .hero-page #subtitle > span {
+    font-size: var(--small-spacing-04);
+  }
+
+  .hero-page #usual-links-title {
+    font-size: var(--small-spacing-05);
+    margin-bottom: var(--small-spacing-04);
+  }
+
+  .hero-page .link-container img {
+    width: var(--medium-spacing-03);
+  }
+  .hero-page .more-info-button {
+    font-size: var(--small-spacing-05);
+  }
+}
+
+@media screen and (width < 700px) {
+  .hero-page {
+    padding: 8% var(--small-spacing-06);
+  }
+
+  .hero-page #title {
+    font-size: var(--medium-spacing-02);
+    line-height: 130%;
   }
 
   .hero-page #subtitle {
@@ -83,9 +115,12 @@
     font-size: var(--small-spacing-03);
   }
 
+  .hero-page .usual-links {
+    font-size: var(--small-spacing-03);
+  }
+
   .hero-page #usual-links-title {
     font-size: var(--small-spacing-04);
-    margin-bottom: var(--small-spacing-04);
   }
 
   .hero-page .link-container img {

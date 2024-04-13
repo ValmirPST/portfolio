@@ -1,12 +1,12 @@
-@import './global.css';
+@import "./global.css";
 
 .projects {
-  background-color: var(--auxiliary-color-04);
-  padding: var(--large-spacing-06)
+  background-color: var(--auxiliary-color-05);
+  padding: var(--large-spacing-06);
 }
 
 .projects .projects-section {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
   padding: var(--large-spacing-06) var(--large-spacing-02) var(--big-spacing-02);
 }
@@ -16,31 +16,71 @@
 }
 
 .projects .projects-container {
+  color: var(--auxiliary-color-04);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: var(--large-spacing-04);
-  color: var(--auxiliary-color-04);
-}
-
-.projects .project-box {
   text-align: center;
-  max-width: 500px;
-  width: 100%;
+  gap: var(--large-spacing-04);
 }
 
 .projects .project-box .project-title {
-  font: normal var(--small-spacing-06) var(--secondary-font);
+  font: normal var(--small-spacing-05) var(--secondary-font);
   margin-bottom: var(--small-spacing-06);
   white-space: nowrap;
 }
 
 .projects .project-box img {
   max-width: 100%;
-  height: auto;
   border-radius: var(--small-spacing-02);
   margin-bottom: var(--small-spacing-04);
+  transition: 0.3s;
 }
 
-@media screen and (width < 1010px) {
-  
+.projects .project-box img:hover {
+  opacity: 80%;
+  box-shadow: 0 0 var(--small-spacing-02) var(--auxiliary-color-05);
+}
+
+@media screen and (width < 1200px) {
+  .projects {
+    padding: var(--medium-spacing-04);
+  }
+}
+
+@media screen and (width < 960px) {
+  .projects .project-box .project-title,
+  p {
+    font-size: 90%;
+  }
+
+  .projects .projects-section {
+    padding: var(--large-spacing-02) var(--medium-spacing-06)
+      var(--large-spacing-06);
+  }
+}
+
+@media screen and (width < 780px) {
+  .projects {
+    padding: var(--small-spacing-06);
+  }
+  .projects .projects-container {
+    grid-template-columns: 1fr;
+    gap: var(--small-spacing-06);
+  }
+
+  .projects .projects-container img {
+    width: 45%;
+    margin-bottom: var(--small-spacing-02);
+  }
+
+  .projects .projects-section {
+    padding: var(--medium-spacing-06) 0;
+  }
+
+  .projects .project-box .project-title,
+  .projects .project-box p {
+    font-size: 100%;
+    margin-bottom: var(--small-spacing-04);
+    padding: 0 var(--medium-spacing-02);
+  }
 }
