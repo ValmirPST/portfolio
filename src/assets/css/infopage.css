@@ -1,0 +1,171 @@
+@import "./global.css";
+
+.infopage {
+  padding: var(--large-spacing-06);
+}
+
+.infopage .secondary-title {
+  margin: 0 auto 6% auto;
+}
+
+.infopage .knowledge-section {
+  background-color: var(--primary-color-medium);
+  padding: var(--small-spacing-04) 0;
+  text-align: center;
+  border-radius: var(--small-spacing-06);
+  border: 1px solid var(--primary-color-lighter);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: var(--medium-spacing-02);
+}
+
+.infopage .knowledge-section .knowledge-box p {
+  font-size: 90%;
+}
+
+.infopage .knowledge-section .knowledge-box img {
+  width: 80%;
+}
+
+.infopage .curriculum-contactme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: var(--big-spacing-02);
+}
+
+.infopage .curriculum {
+  text-align: center;
+  margin: auto;
+}
+
+/* ----- CONTACT ME SECTION ----- */
+
+.infopage .contact-me .contact-form {
+  padding: 0 10%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--medium-spacing-04);
+}
+
+.infopage .contact-me .contact-form .text-field {
+  background-color: var(--auxiliary-color-03);
+  font: normal 110% Jost;
+  padding: var(--small-spacing-03);
+  border: 0;
+  border-radius: var(--small-spacing-04);
+  resize: none;
+}
+
+.infopage .contact-me .contact-form #message-textarea::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 0 var(--small-spacing-04) var(--small-spacing-04) 0;
+}
+
+.infopage
+  .contact-me
+  .contact-form
+  #message-textarea::-webkit-scrollbar-button {
+  display: none;
+}
+
+.infopage .contact-me .contact-form #message-textarea::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-lighter);
+  cursor: default;
+  border-radius: 4px var(--small-spacing-04) var(--small-spacing-04) 4px;
+  z-index: -1000;
+}
+
+.infopage .contact-me .contact-form #contact-button {
+  color: var(--auxiliary-color-03);
+  max-width: 35%;
+  background-color: transparent;
+  font: 700 110% Jost;
+  padding: var(--small-spacing-02);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--small-spacing-04);
+  box-shadow: 0 0 4px var(--secondary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.infopage .contact-me .contact-form #contact-button:hover {
+  border: 1px solid var(--auxiliary-color-03);
+  box-shadow: 0 0 4px var(--auxiliary-color-03);
+}
+
+.infopage .email-container {
+  text-align: center;
+  margin-top: var(--large-spacing-06);
+  display: grid;
+  gap: var(--small-spacing-06);
+}
+
+.infopage .email-container > p {
+  font: normal var(--small-spacing-05) var(--secondary-font);
+}
+
+.infopage .email-container .email-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--small-spacing-02);
+}
+
+.infopage .email-container .email-box > img {
+  width: 30px;
+}
+
+@media screen and (width < 1200px) {
+  .infopage {
+    padding: var(--medium-spacing-04);
+  }
+
+  .infopage .contact-me .contact-form {
+    padding: 0 5%;
+  }
+
+  .infopage .curriculum .curriculum-img {
+    width: 90%;
+  }
+}
+
+@media screen and (width < 960px) {
+  .infopage {
+    padding: var(--medium-spacing-02);
+  }
+
+  .infopage .contact-me .contact-form .text-field {
+    font-size: 100%;
+    padding: var(--small-spacing-03);
+  }
+
+  .infopage .knowledge-section .knowledge-box p {
+    font-size: 80%;
+  }
+
+  .infopage .knowledge-section .knowledge-box img {
+    width: 60%;
+  }
+}
+
+@media screen and (width < 760px) {
+  .infopage .curriculum-contactme {
+    grid-template-columns: 1fr;
+    gap: var(--medium-spacing-02);
+  }
+
+  .infopage .contact-me .contact-form {
+    padding: 0 10%;
+  }
+
+  .infopage .knowledge-section .knowledge-box p {
+    font-size: 70%;
+  }
+
+  .infopage .knowledge-section .knowledge-box img {
+    width: 50%;
+  }
+}

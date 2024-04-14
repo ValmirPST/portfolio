@@ -1,0 +1,48 @@
+@import "./global.css";
+
+footer {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color-medium)
+  );
+  padding: var(--medium-spacing-06) 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-nav-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: var(--small-spacing-06);
+}
+
+footer .nav-link {
+  text-decoration: underline;
+  text-decoration-color: var(--auxiliary-color-04);
+}
+
+@media screen and (width < 900px) {
+  footer {
+    padding: var(--medium-spacing-02) 0;
+  }
+
+  footer .footer-nav-box {
+    grid-template-columns: 1fr;
+    gap: var(--small-spacing-02);
+  }
+}
+
+@media screen and (width < 580px) {
+  footer {
+    font-size: 80%;
+    padding: var(--small-spacing-04) 0;
+  }
+
+  footer .footer-nav-box {
+    gap: var(--small-spacing-01);
+  }
+}

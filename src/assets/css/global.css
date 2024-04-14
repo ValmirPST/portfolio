@@ -68,6 +68,7 @@
 body {
   font-family: var(--primary-font);
   color: var(--auxiliary-color-03);
+  background-color: var(--primary-color);
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
