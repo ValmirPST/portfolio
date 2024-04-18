@@ -5,9 +5,9 @@ function Projects() {
   return (
     <section className="projects">
 
-      <section className="projects-section">
+      <section className="projects-section" id='projects'>
         <div className='secondary-title'>
-          <p>projects.</p>
+          <p>projects. (fazer slide)</p>
           <hr />
         </div>
         

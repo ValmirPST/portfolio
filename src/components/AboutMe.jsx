@@ -6,7 +6,7 @@ import studiesIcon from '../assets/img/about-me/studies-icon.png';
 
 function AboutMe() {
   return (
-    <section className="about-me">
+    <section className="about-me" id="about-me">
 
       <div className="secondary-title">
         <p>about me.</p>
@@ -36,7 +36,7 @@ function AboutMe() {
 
         <article className="information-container">
 
-          <p className="subtitle">who am i</p>
+          <p className="subtitle">know me</p>
           <p>Just a dedicated man trying to become better every day, living in a light way to reach my goals and build a wonderful and awesome life in the near future.</p>
           <div className="info-item">
             <img src={bookIcon} alt="" />

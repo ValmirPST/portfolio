@@ -21,13 +21,13 @@ class Header extends Component {
                   alt="united-states-flag"
                 />
               </div>
-              <a className="nav-link" href="./">
+              <a className="nav-link" href="#about-me">
                 About Me
               </a>
-              <a className="nav-link" href="./">
+              <a className="nav-link" href="#projects">
                 Projects
               </a>
-              <a className="nav-link" href="./">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </div>

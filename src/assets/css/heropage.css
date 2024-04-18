@@ -35,7 +35,8 @@
 .hero-page .more-info-button:hover {
   color: var(--secondary-color-lighter);
   text-shadow: 0 0 8px var(--secondary-color);
-  box-shadow: 0 0 8px var(--primary-color-lighter);
+  border: 1px solid var(--secondary-color-medium);
+  font-size: calc(var(--small-spacing-06) + 1px);
 }
 
 .hero-page .usual-links {

@@ -40,6 +40,11 @@
   margin: auto;
 }
 
+.infopage .curriculum .curriculum-img {
+  filter: blur(2px);
+  cursor: pointer;
+}
+
 /* ----- CONTACT ME SECTION ----- */
 
 .infopage .contact-me .contact-form {

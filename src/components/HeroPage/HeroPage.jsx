@@ -6,7 +6,7 @@ class HeroPage extends Component {
   render() {
     return (
       <>
-        <main className="hero-page">
+        <main className="hero-page" id="hero-page">
 
           <TitleContainer />
           <UsualLinks />
