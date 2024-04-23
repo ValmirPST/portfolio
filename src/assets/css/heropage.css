@@ -25,7 +25,7 @@
   background-color: transparent;
   font: 700 var(--small-spacing-06) var(--primary-font);
   border: 1px solid var(--secondary-color);
-  box-shadow: 0 0 12px var(--secondary-color);
+  box-shadow: 0 0 6px var(--secondary-color);
   padding: var(--small-spacing-01) var(--small-spacing-06);
   border-radius: 6px;
   cursor: pointer;
@@ -33,10 +33,9 @@
 }
 
 .hero-page .more-info-button:hover {
-  color: var(--secondary-color-lighter);
-  text-shadow: 0 0 8px var(--secondary-color);
+  text-shadow: 0 0 1px var(--auxiliary-color-03);
   border: 1px solid var(--secondary-color-medium);
-  font-size: calc(var(--small-spacing-06) + 1px);
+  box-shadow: 0 0 12px var(--secondary-color);
 }
 
 .hero-page .usual-links {

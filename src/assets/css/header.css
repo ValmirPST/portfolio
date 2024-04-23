@@ -1,4 +1,4 @@
-@import './global.css';
+@import "./global.css";
 
 .global-header {
   width: 100%;
@@ -50,11 +50,13 @@
   cursor: pointer;
 }
 
-#us-flag, #brazil-flag {
+#us-flag,
+#brazil-flag {
   transition: 0.4s;
 }
 
-#us-flag:hover, #brazil-flag:hover {
+#us-flag:hover,
+#brazil-flag:hover {
   box-shadow: 0 0 5px #fff;
 }
 
@@ -69,7 +71,7 @@
 @media screen and (width < 920px) {
   .global-header {
     padding: var(--small-spacing-06) var(--medium-spacing-04);
-  }  
+  }
 
   .global-nav .links-div {
     display: none;
@@ -83,7 +85,7 @@
 @media screen and (width < 520px) {
   .global-header {
     padding: var(--small-spacing-04) var(--medium-spacing-02);
-  }  
+  }
 
   .global-nav .links-div {
     display: none;

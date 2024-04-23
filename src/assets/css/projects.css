@@ -8,7 +8,9 @@
 .projects .projects-section {
   background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
-  padding: var(--large-spacing-06) var(--large-spacing-02) var(--big-spacing-02);
+  padding: var(--large-spacing-06) var(--large-spacing-02);
+  overflow: hidden;
+  /* box-shadow: inset 0 0 0 100px white; */
 }
 
 .projects .projects-section .secondary-title {
@@ -17,9 +19,10 @@
 
 .projects .projects-container {
   color: var(--auxiliary-color-04);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   text-align: center;
+  align-items: center;
   gap: var(--large-spacing-04);
 }
 
@@ -30,7 +33,6 @@
 }
 
 .projects .project-box img {
-  max-width: 100%;
   border-radius: var(--small-spacing-02);
   margin-bottom: var(--small-spacing-04);
   transition: 0.3s;
@@ -63,6 +65,7 @@
   .projects {
     padding: var(--small-spacing-06);
   }
+
   .projects .projects-container {
     grid-template-columns: 1fr;
     gap: var(--small-spacing-06);
