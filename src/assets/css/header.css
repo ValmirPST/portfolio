@@ -6,7 +6,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  padding: var(--medium-spacing-04) var(--large-spacing-06);
+  padding: var(--medium-spacing-02) var(--big-spacing-02);
   z-index: 1000;
 }
 

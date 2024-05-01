@@ -13,13 +13,13 @@ function ContactMe() {
           id="name-input"
           className="text-field"
           type="text"
-          placeholder="Name"
+          placeholder="Enter your full name"
         />
         <input
           id="email-input"
           className="text-field"
           type="text"
-          placeholder="Email"
+          placeholder="Enter your email"
         />
         <textarea
           id="message-textarea"
@@ -27,7 +27,7 @@ function ContactMe() {
           type="text"
           rows={6}
           cols={40}
-          placeholder="Message"
+          placeholder="Enter your essage"
         />
 
         <button id="contact-button" type="submit">

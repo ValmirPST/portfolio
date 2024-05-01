@@ -59,16 +59,21 @@
   box-sizing: border-box;
 }
 
-.background-fixed {
-  background: var(--auxiliary-color-01)
-    url(../img/hero-page/hero-page-background.png) no-repeat fixed bottom center;
+/* .background-fixed {
+  background: var(--primary-color)
+    url(../img/hero-page/hero-page-background1.png) no-repeat fixed center
+    center;
   background-size: cover;
-}
+} */
 
 body {
+  background: var(--primary-color)
+    url(../img/hero-page/hero-page-background1.png) no-repeat fixed center
+    center;
+  background-size: cover;
+  /* background-color: var(--primary-color); */
   font-family: var(--primary-font);
   color: var(--auxiliary-color-03);
-  background-color: var(--primary-color);
 }
 
 code {

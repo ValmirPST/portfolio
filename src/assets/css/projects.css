@@ -2,15 +2,13 @@
 
 .projects {
   background-color: var(--auxiliary-color-05);
-  padding: var(--large-spacing-06);
+  padding: var(--large-spacing-06) var(--big-spacing-02);
 }
 
 .projects .projects-section {
   background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
   padding: var(--large-spacing-06) var(--large-spacing-02);
-  overflow: hidden;
-  /* box-shadow: inset 0 0 0 100px white; */
 }
 
 .projects .projects-section .secondary-title {
@@ -24,6 +22,7 @@
   text-align: center;
   align-items: center;
   gap: var(--large-spacing-04);
+  overflow: hidden;
 }
 
 .projects .project-box .project-title {
