@@ -3,17 +3,15 @@ import Knowledge from "./Knowledge";
 import Curriculum from "./Curriculum";
 import ContactMe from "./ContactMe";
 import emailLogo from "../../assets/img/info-page/email-logo.svg";
-import arrowForward from "../../assets/img/arrow-forward-icon.svg";
-import arrowBack from "../../assets/img/arrow-back-icon.svg";
+import arrowForward from "../../assets/img/global/arrow-forward-icon.svg";
+import arrowBack from "../../assets/img/global/arrow-back-icon.svg";
 
 function InfoPage() {
   let [slideMovement, setSlideMovement] = useState(true);
 
   const moveSlider = () => {
     const knowledgeInnerBox = document.querySelector(".knowledge-inner-box");
-    const nextBtn = document.querySelector(".next-btn");
-
-    console.log(document.body.clientWidth);
+    const nextBtn = document.querySelector(".infopage .next-btn");
 
     if (slideMovement && knowledgeInnerBox instanceof HTMLElement) {
       nextBtn.firstChild.setAttribute("src", arrowBack);

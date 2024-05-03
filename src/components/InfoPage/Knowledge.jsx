@@ -25,16 +25,14 @@ class Knowledge extends Component {
   render() {
     return this.knowledgeList.map((value, index) => {
       return (
-        <>
-          <div className="knowledge-box">
-            <img
-              className="knowledge-logo"
-              src={this.knowledgeImgList[index]}
-              alt={value}
-            />
-            <p>{value}</p>
-          </div>
-        </>
+        <div className="knowledge-box" key={index}>
+          <img
+            className="knowledge-logo"
+            src={this.knowledgeImgList[index]}
+            alt={value}
+          />
+          <p>{value}</p>
+        </div>
       );
     });
   }

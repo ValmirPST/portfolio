@@ -12,7 +12,12 @@ function TitleContainer() {
 
       <hr />
 
-      <button className="more-info-button">MORE INFO</button>
+      <button
+        onClick={() => window.open("https://github.com/valmirpst/")}
+        className="more-info-button"
+      >
+        MORE INFO
+      </button>
     </section>
   );
 }

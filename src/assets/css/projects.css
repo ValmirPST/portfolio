@@ -8,7 +8,9 @@
 .projects .projects-section {
   background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
-  padding: var(--large-spacing-06) var(--large-spacing-02);
+  padding: var(--large-spacing-02) var(--large-spacing-02);
+  overflow: hidden;
+  position: relative;
 }
 
 .projects .projects-section .secondary-title {
@@ -17,29 +19,55 @@
 
 .projects .projects-container {
   color: var(--auxiliary-color-04);
-  display: flex;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  width: 100%;
+  border-radius: var(--small-spacing-06);
   text-align: center;
+  display: flex;
   align-items: center;
-  gap: var(--large-spacing-04);
-  overflow: hidden;
+  transition: 0.5s;
+}
+
+.projects .projects-container .project-box {
+  flex-shrink: 0;
+  width: 80%;
+  margin: 0 10%;
 }
 
 .projects .project-box .project-title {
   font: normal var(--small-spacing-05) var(--secondary-font);
   margin-bottom: var(--small-spacing-06);
-  white-space: nowrap;
 }
 
 .projects .project-box img {
-  border-radius: var(--small-spacing-02);
-  margin-bottom: var(--small-spacing-04);
-  transition: 0.3s;
+  width: 60%;
+  border-radius: var(--small-spacing-04);
 }
 
 .projects .project-box img:hover {
   opacity: 80%;
   box-shadow: 0 0 var(--small-spacing-02) var(--auxiliary-color-05);
+}
+
+.projects .next-btn {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  right: 20%;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.projects .prev-btn {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  left: 20%;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 10;
 }
 
 @media screen and (width < 1200px) {
@@ -49,11 +77,6 @@
 }
 
 @media screen and (width < 960px) {
-  .projects .project-box .project-title,
-  p {
-    font-size: 90%;
-  }
-
   .projects .projects-section {
     padding: var(--large-spacing-02) var(--medium-spacing-06)
       var(--large-spacing-06);
@@ -65,24 +88,7 @@
     padding: var(--small-spacing-06);
   }
 
-  .projects .projects-container {
-    grid-template-columns: 1fr;
-    gap: var(--small-spacing-06);
-  }
-
-  .projects .projects-container img {
-    width: 45%;
-    margin-bottom: var(--small-spacing-02);
-  }
-
   .projects .projects-section {
-    padding: var(--medium-spacing-06) 0;
-  }
-
-  .projects .project-box .project-title,
-  .projects .project-box p {
-    font-size: 100%;
-    margin-bottom: var(--small-spacing-04);
-    padding: 0 var(--medium-spacing-02);
+    padding: var(--medium-spacing-06) var(--medium-spacing-02);
   }
 }

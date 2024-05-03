@@ -4,7 +4,7 @@
   Portfolio Website
 </h1>
 
-<div align="center"><img src="src/assets/img/preview.png" alt="Preview do Projeto"></div>
+<div align="center"><img src="src/assets/img/global/preview.png" alt="Preview do Projeto"></div>
 
 Este é o repositório do meu website, desenvolvido utilizando React. Este site foi criado para mostrar minha experiência, projetos e habilidades como desenvolvedor web.
 
