@@ -8,7 +8,8 @@
 .projects .projects-section {
   background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
-  padding: var(--large-spacing-02) var(--large-spacing-02);
+  padding: var(--large-spacing-02) var(--large-spacing-02)
+    var(--large-spacing-06);
   overflow: hidden;
   position: relative;
 }
@@ -28,46 +29,47 @@
 }
 
 .projects .projects-container .project-box {
-  flex-shrink: 0;
   width: 80%;
+  flex-shrink: 0;
   margin: 0 10%;
 }
 
 .projects .project-box .project-title {
-  font: normal var(--small-spacing-05) var(--secondary-font);
+  font: normal var(--small-spacing-06) var(--secondary-font);
   margin-bottom: var(--small-spacing-06);
+  text-wrap: nowrap;
 }
 
 .projects .project-box img {
-  width: 60%;
-  border-radius: var(--small-spacing-04);
+  width: 75%;
+  border: 0;
+  border-radius: var(--small-spacing-02);
+  box-shadow: 0 0 4px #e6e6e670;
+  filter: brightness(0.8);
 }
 
 .projects .project-box img:hover {
-  opacity: 80%;
-  box-shadow: 0 0 var(--small-spacing-02) var(--auxiliary-color-05);
+  opacity: 0.7;
+}
+
+.projects button {
+  width: 28.5%;
+  height: 60%;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 28%;
+  bottom: 12%;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .projects .next-btn {
-  background-color: transparent;
-  border: 0;
-  position: absolute;
-  right: 20%;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
-  z-index: 10;
+  right: 0;
 }
 
 .projects .prev-btn {
-  background-color: transparent;
-  border: 0;
-  position: absolute;
-  left: 20%;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
-  z-index: 10;
+  left: 0;
 }
 
 @media screen and (width < 1200px) {
@@ -78,8 +80,7 @@
 
 @media screen and (width < 960px) {
   .projects .projects-section {
-    padding: var(--large-spacing-02) var(--medium-spacing-06)
-      var(--large-spacing-06);
+    padding: var(--medium-spacing-06) var(--medium-spacing-02);
   }
 }
 
@@ -89,6 +90,26 @@
   }
 
   .projects .projects-section {
-    padding: var(--medium-spacing-06) var(--medium-spacing-02);
+    padding: var(--medium-spacing-02) 0;
+  }
+
+  .projects .projects-section .project-title {
+    font-size: var(--small-spacing-05);
+  }
+}
+
+@media screen and (width < 480px) {
+  .projects .projects-section {
+    padding: var(--small-spacing-04);
+    border-radius: var(--small-spacing-02);
+  }
+
+  .projects .projects-section .project-title {
+    font-size: var(--small-spacing-04);
+    margin-bottom: var(--small-spacing-04);
+  }
+
+  .projects button {
+    width: 22.8%;
   }
 }

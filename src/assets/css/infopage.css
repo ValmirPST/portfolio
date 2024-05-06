@@ -176,6 +176,9 @@
 }
 
 @media screen and (width < 760px) {
+  .infopage .knowledge-section .knowledge-box img {
+    width: 40px;
+  }
   .infopage .curriculum-contactme {
     grid-template-columns: 1fr;
     gap: var(--medium-spacing-02);

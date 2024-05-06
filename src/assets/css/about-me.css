@@ -4,7 +4,7 @@
   width: 100%;
   /* padding: 0 var(--large-spacing-06) 8% var(--large-spacing-06); */
   padding: 0 var(--large-spacing-04) 8% var(--large-spacing-02);
-  text-align: center;
+  text-align: justify;
 }
 
 .about-me .secondary-title {
@@ -26,9 +26,11 @@
 
 .about-me .information-container > p:nth-child(2) {
   color: var(--auxiliary-color-04);
+  margin-bottom: var(--small-spacing-04);
 }
 
 .about-me .information-container .subtitle {
+  text-align: center;
   font: normal var(--small-spacing-06) var(--secondary-font);
   margin-bottom: var(--small-spacing-06);
 }

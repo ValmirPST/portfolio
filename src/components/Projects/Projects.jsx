@@ -3,10 +3,11 @@ import ProjectsContainer from "./ProjectsContainer";
 import arrowForward from "../../assets/img/global/arrow-forward-icon.svg";
 import arrowBack from "../../assets/img/global/arrow-back-icon.svg";
 
-import project01 from "../../assets/img/projects/project01.jpg";
-import project02 from "../../assets/img/projects/project02.jpg";
-import project03 from "../../assets/img/projects/project03.jpg";
-import notFoundImg from "../../assets/img/global/not-found.svg";
+import project01 from "../../assets/img/projects/project01.png";
+import project02 from "../../assets/img/projects/project02.png";
+import project03 from "../../assets/img/projects/project03.png";
+import project04 from "../../assets/img/projects/project04.png";
+import project05 from "../../assets/img/projects/project05.png";
 
 function Projects() {
   let projects = {
@@ -14,13 +15,13 @@ function Projects() {
       project01,
       "https://valmirpst.github.io/android-project",
     ],
-    "to do list": [project02, "https://valmirpst.github.io/online-to-do"],
-    "logical tasks": [project03, "https://valmirpst.github.io/usual-exercises"],
     "whatsapp links": [
-      notFoundImg,
+      project02,
       "https://github.com/valmirpst/whatsapp-link-project",
     ],
-    "my portfolio": [notFoundImg, "https://github.com/valmirpst/portfolio"],
+    "to do list": [project03, "https://valmirpst.github.io/online-to-do"],
+    "logical tasks": [project04, "https://valmirpst.github.io/usual-exercises"],
+    "my portfolio": [project05, "https://github.com/valmirpst/portfolio"],
   };
 
   const [active, setActive] = React.useState(0);
@@ -30,6 +31,16 @@ function Projects() {
   React.useEffect(() => {
     const { width } = contentRef.current.getBoundingClientRect();
     setPosition(width * active);
+
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+
+    active === Object.keys(projects).length - 1
+      ? (nextBtn.style.display = "none")
+      : (nextBtn.style.display = "block");
+    active === 0
+      ? (prevBtn.style.display = "none")
+      : (prevBtn.style.display = "block");
   }, [active]);
 
   function nextSlide() {
