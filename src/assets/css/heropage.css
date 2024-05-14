@@ -3,7 +3,6 @@
 .hero-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* padding: 8% var(--large-spacing-06); */
   padding: 8% var(--big-spacing-02);
 }
 

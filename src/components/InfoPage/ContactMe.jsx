@@ -27,7 +27,7 @@ function ContactMe() {
           type="text"
           rows={6}
           cols={40}
-          placeholder="Enter your essage"
+          placeholder="Enter your message"
         />
 
         <button id="contact-button" type="submit">

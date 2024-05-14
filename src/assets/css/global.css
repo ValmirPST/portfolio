@@ -59,13 +59,6 @@
   box-sizing: border-box;
 }
 
-/* .background-fixed {
-  background: var(--primary-color)
-    url(../img/hero-page/hero-page-background1.png) no-repeat fixed center
-    center;
-  background-size: cover;
-} */
-
 body {
   background: var(--primary-color)
     url(../img/hero-page/hero-page-background1.png) no-repeat fixed center

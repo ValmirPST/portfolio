@@ -17,7 +17,7 @@ function Projects() {
     ],
     "whatsapp links": [
       project02,
-      "https://github.com/valmirpst/whatsapp-link-project",
+      "https://valmirpst.github.io/whatsapp-link-project/",
     ],
     "to do list": [project03, "https://valmirpst.github.io/online-to-do"],
     "logical tasks": [project04, "https://valmirpst.github.io/usual-exercises"],

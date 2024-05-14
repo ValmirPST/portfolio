@@ -43,7 +43,7 @@
 .projects .project-box img {
   width: 75%;
   border: 0;
-  border-radius: var(--small-spacing-02);
+  border-radius: var(--small-spacing-03);
   box-shadow: 0 0 4px #e6e6e670;
   filter: brightness(0.8);
 }

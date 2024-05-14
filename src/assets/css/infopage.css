@@ -158,7 +158,7 @@
 
 @media screen and (width < 960px) {
   .infopage {
-    padding: var(--medium-spacing-02);
+    padding: var(--small-spacing-06);
   }
 
   .infopage .contact-me .contact-form .text-field {
