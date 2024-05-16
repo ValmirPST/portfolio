@@ -18,8 +18,6 @@ class Header extends Component {
       }
     }
 
-    function closeMenu() {}
-
     return (
       <>
         <header className="global-header">

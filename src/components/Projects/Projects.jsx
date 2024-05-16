@@ -24,6 +24,8 @@ function Projects() {
     "my portfolio": [project05, "https://github.com/valmirpst/portfolio"],
   };
 
+  let projectsLength = Object.keys(projects).length;
+
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -35,13 +37,13 @@ function Projects() {
     const nextBtn = document.querySelector(".next-btn");
     const prevBtn = document.querySelector(".prev-btn");
 
-    active === Object.keys(projects).length - 1
+    active === projectsLength - 1
       ? (nextBtn.style.display = "none")
       : (nextBtn.style.display = "block");
     active === 0
       ? (prevBtn.style.display = "none")
       : (prevBtn.style.display = "block");
-  }, [active]);
+  }, [active, projectsLength]);
 
   function nextSlide() {
     if (active < Object.keys(projects).length - 1) setActive(active + 1);
