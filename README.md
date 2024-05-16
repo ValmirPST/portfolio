@@ -36,7 +36,7 @@ O site possui 5 sessões:
 
 Este projeto ainda está em desenvolvimento e irá ser modificado. Algumas partes estão sendo melhoradas e novas funcionalidades podem e serão adicionadas no futuro. Sinta-se à vontade para acompanhar o progresso e contribuir com sugestões ou feedback.
 
-Obrigado pela visita no meu repositório!
+Obrigado pela visita no repositório!
 
 ### Designer e Desenvolvedor
 
