@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bf1d9212.css",
-    "main.js": "/portfolio/static/js/main.261e4738.js",
+    "main.css": "/portfolio/static/css/main.db6624bb.css",
+    "main.js": "/portfolio/static/js/main.52bcf7de.js",
+    "static/media/curriculum-img.jpg": "/portfolio/static/media/curriculum-img.23c13bae2cf2bbea0378.jpg",
     "static/media/project01.png": "/portfolio/static/media/project01.52b6a683c11edf3bb653.png",
     "static/media/hero-page-background1.png": "/portfolio/static/media/hero-page-background1.29cea9a1a6ff084ac9b5.png",
-    "static/media/Valmir Paiva Stachin - Estagio Dev.png": "/portfolio/static/media/Valmir Paiva Stachin - Estagio Dev.2a106ba4207f14025fbc.png",
     "static/media/Jost.ttf": "/portfolio/static/media/Jost.34835cd554b7b71732e2.ttf",
     "static/media/MajorMonoDisplay.ttf": "/portfolio/static/media/MajorMonoDisplay.68a265ac783795c7bcc1.ttf",
     "static/media/project05.png": "/portfolio/static/media/project05.6bdf69884f45d23dc068.png",
@@ -30,11 +30,11 @@
     "static/media/close.svg": "/portfolio/static/media/close.df0aabecd3dcbf06933e574f977a545f.svg",
     "static/media/arrow-forward-icon.svg": "/portfolio/static/media/arrow-forward-icon.fbde25d992239f755418a0e05bae204e.svg",
     "static/media/arrow-back-icon.svg": "/portfolio/static/media/arrow-back-icon.19223cde52fb72ab3f217a32f5e4edc1.svg",
-    "main.bf1d9212.css.map": "/portfolio/static/css/main.bf1d9212.css.map",
-    "main.261e4738.js.map": "/portfolio/static/js/main.261e4738.js.map"
+    "main.db6624bb.css.map": "/portfolio/static/css/main.db6624bb.css.map",
+    "main.52bcf7de.js.map": "/portfolio/static/js/main.52bcf7de.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf1d9212.css",
-    "static/js/main.261e4738.js"
+    "static/css/main.db6624bb.css",
+    "static/js/main.52bcf7de.js"
   ]
 }
