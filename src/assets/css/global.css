@@ -113,3 +113,29 @@ code {
     font-size: var(--small-spacing-06);
   }
 }
+
+.animateLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animateLeft 0.5s forwards;
+}
+
+@keyframes animateLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.animateRight {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: animateLeft 0.5s forwards;
+}
+
+@keyframes animateRight {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}

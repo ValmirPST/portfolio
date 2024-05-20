@@ -2,7 +2,7 @@ import React from "react";
 
 function TitleContainer() {
   return (
-    <section className="titles-container">
+    <section className="titles-container animateLeft">
       <h1 id="title">
         VALMIR PAIVA<br></br>STACHIN
       </h1>

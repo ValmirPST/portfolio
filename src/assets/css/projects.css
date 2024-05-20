@@ -8,14 +8,13 @@
 .projects .projects-section {
   background-color: var(--primary-color);
   border-radius: var(--small-spacing-04);
-  padding: var(--large-spacing-02) var(--large-spacing-02)
-    var(--large-spacing-06);
+  padding: var(--large-spacing-02) var(--medium-spacing-04);
   overflow: hidden;
   position: relative;
 }
 
 .projects .projects-section .secondary-title {
-  margin: 0 auto 6% auto;
+  margin: 0 auto 4% auto;
 }
 
 .projects .projects-container {
@@ -74,11 +73,15 @@
 
 @media screen and (width < 1200px) {
   .projects {
-    padding: var(--medium-spacing-04);
+    padding: var(--large-spacing-02);
   }
 }
 
 @media screen and (width < 960px) {
+  .projects {
+    padding: var(--medium-spacing-06);
+  }
+
   .projects .projects-section {
     padding: var(--medium-spacing-06) var(--medium-spacing-02);
   }
@@ -86,7 +89,7 @@
 
 @media screen and (width < 780px) {
   .projects {
-    padding: var(--small-spacing-06);
+    padding: var(--small-spacing-04);
   }
 
   .projects .projects-section {
@@ -99,8 +102,11 @@
 }
 
 @media screen and (width < 480px) {
+  .projects {
+    padding: var(--small-spacing-02);
+  }
   .projects .projects-section {
-    padding: var(--small-spacing-04);
+    padding: var(--small-spacing-04) 0;
     border-radius: var(--small-spacing-02);
   }
 

@@ -22,7 +22,7 @@ class Header extends Component {
       <>
         <header className="global-header">
           <nav className="global-nav">
-            <a className="nav-link logo-link" href="./">
+            <a className="nav-link logo-link" href="/portfolio">
               portfolio.
             </a>
             <div className="links-div">

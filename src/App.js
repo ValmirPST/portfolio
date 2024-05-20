@@ -11,10 +11,8 @@ function App() {
     <div className="App">
       <Header />
 
-      <section className="background-fixed">
-        <HeroPage />
-        <AboutMe />
-      </section>
+      <HeroPage />
+      <AboutMe />
 
       <Projects />
 
