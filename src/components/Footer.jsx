@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer>
         <div className="footer-nav-box">
-          <a className="nav-link" href=".#hero-page">
+          <a className="nav-link" href="#hero-page">
             Home
           </a>
           <a className="nav-link" href="#about-me">

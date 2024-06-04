@@ -1,36 +1,32 @@
-import React from "react";
-import ProjectsContainer from "./ProjectsContainer";
+import { useState, useEffect, useRef } from "react";
+import Project from "./Project";
 import arrowForward from "../../assets/img/global/arrow-forward-icon.svg";
 import arrowBack from "../../assets/img/global/arrow-back-icon.svg";
 
-import project01 from "../../assets/img/projects/project01.png";
-import project02 from "../../assets/img/projects/project02.png";
-import project03 from "../../assets/img/projects/project03.png";
-import project04 from "../../assets/img/projects/project04.png";
-import project05 from "../../assets/img/projects/project05.png";
-
 function Projects() {
-  let projects = {
-    "android project": [
-      project01,
-      "https://valmirpst.github.io/android-project",
-    ],
-    "whatsapp links": [
-      project02,
-      "https://valmirpst.github.io/whatsapp-link-project/",
-    ],
-    "to do list": [project03, "https://valmirpst.github.io/online-to-do"],
-    "logical tasks": [project04, "https://valmirpst.github.io/usual-exercises"],
-    "my portfolio": [project05, "https://github.com/valmirpst/portfolio"],
-  };
+  const [repos, setRepos] = useState([]);
 
-  let projectsLength = Object.keys(projects).length;
+  useEffect(() => {
+    fetch("https://api.github.com/users/valmirpst/repos")
+      .then(response => response.json())
+      .then(data =>
+        setRepos(
+          data.filter(repo => {
+            if (repo.name === "valmirpst") return false;
+            if (repo.name === "javascript-dw") return false;
+            return true;
+          })
+        )
+      );
+  }, []);
 
-  const [active, setActive] = React.useState(0);
-  const [position, setPosition] = React.useState(0);
-  const contentRef = React.useRef();
+  let projectsLength = repos.length;
 
-  React.useEffect(() => {
+  const [active, setActive] = useState(0);
+  const [position, setPosition] = useState(0);
+  const contentRef = useRef();
+
+  useEffect(() => {
     const { width } = contentRef.current.getBoundingClientRect();
     setPosition(width * active);
 
@@ -46,7 +42,7 @@ function Projects() {
   }, [active, projectsLength]);
 
   function nextSlide() {
-    if (active < Object.keys(projects).length - 1) setActive(active + 1);
+    if (active < repos.length - 1) setActive(active + 1);
   }
 
   function prevSlide() {
@@ -69,7 +65,9 @@ function Projects() {
           className="projects-container"
           style={{ transform: `translateX(-${position}px)` }}
         >
-          <ProjectsContainer projects={projects} />
+          {repos.map(repo => (
+            <Project repo={repo} key={repo.id} />
+          ))}
         </section>
         <button className="next-btn" onClick={nextSlide}>
           <img src={arrowForward} alt="" />
